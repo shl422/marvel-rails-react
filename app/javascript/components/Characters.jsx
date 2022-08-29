@@ -29,7 +29,7 @@ class Characters extends React.Component {
 			key: "action",
 			render: (_text, record) => (
 				<Popconfirm
-					title="Are you sure delete this beer?"
+					title="Are you sure delete this character?"
 					onConfirm={() => this.deleteCharacter(record.id)}
 					okText="Yes"
 					cancelText="No"
@@ -64,10 +64,10 @@ class Characters extends React.Component {
 					const newEl = {
 						key: character.id,
 						id: character.id,
-						brand: character.brand,
-						style: character.style,
-						country: character.country,
-						quantity: character.quantity,
+						name: character.name,
+						movie: character.movie,
+						powers: character.powers,
+						age: character.age,
 					};
 
 					this.setState((prevState) => ({

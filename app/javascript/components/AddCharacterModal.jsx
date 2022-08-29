@@ -3,10 +3,10 @@ import React from "react";
 
 const { Option } = Select;
 
-class AddBeerModal extends React.Component {
+class AddCharacterModal extends React.Component {
 	formRef = React.createRef();
 	state = {
-		visible: false,
+		visible: true,
 	};
 
 	onFinish = (values) => {
