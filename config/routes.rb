@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      
       get 'characters/index'
-      post 'characters/create'
-      delete 'characters/:id', to: 'charcters#destroy'
+      post 'characters', to: 'characters#create'
+      delete 'characters/:id', to: 'characters#destroy'
     end
   end
 

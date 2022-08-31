@@ -83,7 +83,7 @@ class Characters extends React.Component {
 		this.loadCharacters();
 	};
 
-	deleteBeer = (id) => {
+	deleteCharacter = (id) => {
 		const url = `api/v1/characters/${id}`;
 
 		fetch(url, {

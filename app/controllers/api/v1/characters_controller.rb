@@ -30,7 +30,7 @@ class Api::V1::CharactersController < ApplicationController
     # POST /beers
     # POST /beers.json
     def create
-      @character = Character.new(beer_params)
+      @character = Character.new(character_params)
   
   
       if @character.save
@@ -55,7 +55,7 @@ class Api::V1::CharactersController < ApplicationController
   
     private
       # Use callbacks to share common setup or constraints between actions.
-      def set_beer
+      def set_character
         @character = Character.find(params[:id])
       end
   
